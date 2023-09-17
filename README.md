@@ -7,7 +7,7 @@ This project is all about empowering underrepresented minorities to find afforda
 
 Cost of Living Calculation: Our app calculates the cost of living in Miami for users. It considers factors like housing, transportation, groceries, and more to provide an accurate estimate of the expenses they might incur.
 
-Salary-Based Matching: The heart of our app is its ability to match users' annual salaries with affordable communities in Miami. 
+Salary-Based Matching: The heart of our app is its ability to match users' annual salaries with affordable communities near Miami. 
 Users input their salary, and the app finds the top 5 locations where they can comfortably live within their budget.
 
 User-Friendly Interface: We've designed the app to be user-friendly and easy to navigate. Users can input their salary, and with a single click, they receive a list of the most suitable and affordable communities.
