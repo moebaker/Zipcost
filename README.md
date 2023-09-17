@@ -52,6 +52,11 @@ This project is licensed under the MIT License.
 To install the project dependencies, use the following command:
 
 ```bash
-npm install
+
+npx create-react-app zipcost-fiu-app --template redux
+cd Zipcost
+cd zipcost-fiu-app
+npm start
+
 
 
