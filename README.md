@@ -27,9 +27,9 @@ In essence, our web app is a tool that goes beyond traditional cost-of-living ca
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [License](#license)
 - [Usage](#usage)
+- [License](#license)
+- [Installation](#installation)
 
 
 ## Usage
