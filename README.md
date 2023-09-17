@@ -28,13 +28,9 @@ In essence, our web app is a tool that goes beyond traditional cost-of-living ca
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
+- [Usage](#usage)
 - [Contact](#contact)
-
-
-
 
 ## Usage
 - Login page gives you an option to register or sign in only if user has registered before
@@ -46,11 +42,16 @@ In essence, our web app is a tool that goes beyond traditional cost-of-living ca
 - Click the "Calculate" button to find affordable communities.
 - View the top 5 recommended locations.
 
+## License
 
 This project is licensed under the MIT License.
 
-## Contact
 
-For questions or feedback, please contact Mohamed Baker.
+## Installation
+
+To install the project dependencies, use the following command:
+
+```bash
+npm install
 
 
