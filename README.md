@@ -33,13 +33,7 @@ In essence, our web app is a tool that goes beyond traditional cost-of-living ca
 - [License](#license)
 - [Contact](#contact)
 
-## Installation
 
-To install the project dependencies, use the following command:
-
-
-npx create-react-app zipcost-fiu-app --template redux
-npm install firebase
 
 
 ## Usage
