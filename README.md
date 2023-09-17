@@ -44,7 +44,7 @@ In essence, our web app is a tool that goes beyond traditional cost-of-living ca
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed with the [MIT license](/LICENSE).
 
 
 ## Installation
