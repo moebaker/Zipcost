@@ -40,7 +40,7 @@ To install the project dependencies, use the following command:
 ```bash
 npx create-react-app zipcost-fiu-app --template redux
 npm install firebase
-
+##
 
 
 
