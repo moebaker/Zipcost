@@ -38,4 +38,22 @@ In essence, our web app is a tool that goes beyond traditional cost-of-living ca
 To install the project dependencies, use the following command:
 
 ```bash
-npm install
+npx create-react-app zipcost-fiu-app --template redux
+npm install firebase
+
+## Usage
+
+Input your annual salary.
+Click the "Calculate" button to find affordable communities.
+View the top 5 recommended locations.
+Contributing
+
+We welcome contributions from the community. To contribute to this project, please follow our contribution guidelines.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For questions or feedback, please contact Your Name.
