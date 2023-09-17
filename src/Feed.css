@@ -1,0 +1,39 @@
+.feed {
+    flex: 0.7;
+    margin: 0 20px;
+    width: 100%; /* Change width to 100% to take available space */
+}
+
+
+.feed__input {
+    border: 2px solid lightgray;
+    border-radius: 30px;
+    display: flex;
+    padding: 9px;
+    color: gray;
+    padding-left: 15px;
+}
+
+.feed__input > form {
+    display: flex;
+    width: 100%; /* Change width to 100% to take available space */
+}
+
+.feed__input > form > input {
+    border: none;
+    flex: 1;
+    margin-left: 10px;
+    outline: none; /* Use 'none' to remove the outline on input focus */
+    font-weight: 600;
+}
+
+.feed__input > form > button {
+    display: none;
+}
+
+.feed__inputOptions {
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+}
+
