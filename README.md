@@ -30,7 +30,7 @@ In essence, our web app is a tool that goes beyond traditional cost-of-living ca
 - [Installation](#installation)
 - [License](#license)
 - [Usage](#usage)
-- [Contact](#contact)
+
 
 ## Usage
 - Login page gives you an option to register or sign in only if user has registered before
