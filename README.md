@@ -37,10 +37,26 @@ In essence, our web app is a tool that goes beyond traditional cost-of-living ca
 
 To install the project dependencies, use the following command:
 
-```bash
+
 npx create-react-app zipcost-fiu-app --template redux
 npm install firebase
-##
 
+
+## Usage
+- Login page gives you an option to register or sign in only if user has registered before
+- To register you will fill all the provided section which are Name, Email, Password
+- To sign in Email and Password are required only
+- Input your annual salary.
+- Input Desired radius
+- Input Disposable income as a percent 
+- Click the "Calculate" button to find affordable communities.
+- View the top 5 recommended locations.
+
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For questions or feedback, please contact Mohamed Baker.
 
 
