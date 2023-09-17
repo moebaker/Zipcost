@@ -1,4 +1,4 @@
-# Zipcost
+# ZipCost
 
 
 Project Overview
