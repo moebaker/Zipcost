@@ -38,15 +38,18 @@ const Calculator = () => {
   const housing_filter = (salary, max_distance, percent_offset) => {
     let max_cost_of_living = salary - salary * (percent_offset / 100);
 
-    let acceptable_distances = 0;                                                                     //Max distance
+    let acceptable_distances = -1;                                                                     //Max distance
     for (acceptable_distances; acceptable_distances < radius.length; acceptable_distances++){
-        if (radius[acceptable_distances] > max_distance){
+        if (radius[acceptable_distances + 1] > max_distance){
             break;
         }
     }
 
     const valid_houses = [];                                  //array holding the index of houses that meet the distance and CoL requirement
     for (let i = 0; i <= acceptable_distances; i++){
+        if(acceptable_distances < 0){
+          break;
+        }
         if(cost_of_living[i] <= max_cost_of_living){
             valid_houses[valid_houses.length] = i;                        //add to the array
         }
