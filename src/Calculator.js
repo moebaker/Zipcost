@@ -38,34 +38,36 @@ const Calculator = () => {
   const housing_filter = (salary, max_distance, percent_offset) => {
     let max_cost_of_living = salary - salary * (percent_offset / 100);
 
-    let acceptable_distances = -1;                                                                     //Max distance
-    for (acceptable_distances; acceptable_distances < radius.length; acceptable_distances++){
-        if (radius[acceptable_distances + 1] > max_distance){
-            break;
-        }
+    let acceptable_distances = -1; // Initialize it outside of the loop
+  for (acceptable_distances; acceptable_distances < radius.length; acceptable_distances++) {
+    if (radius[acceptable_distances] > max_distance) {
+      if (radius[acceptable_distances + 1] > max_distance) {
+        break;
+      }
     }
+  }
 
-    const valid_houses = [];                                  //array holding the index of houses that meet the distance and CoL requirement
-    for (let i = 0; i <= acceptable_distances; i++){
-        if(acceptable_distances < 0){
-          break;
-        }
-        if(cost_of_living[i] <= max_cost_of_living){
-            valid_houses[valid_houses.length] = i;                        //add to the array
-        }
+  const valid_houses = []; // Initialize an array to store valid indices
+  for (let i = 0; i <= acceptable_distances; i++) {
+    if (acceptable_distances < 0) {
+      break;
     }
-                                                        
-    for (let i = 0; i < valid_houses.length; i++){             //Sort valid houses by price
-        let minIndex = i;
-        for(let j = i + 1; j < valid_houses.length; j++){
-            if (cost_of_living[valid_houses[minIndex]] < cost_of_living[valid_houses[j]]){
-                minIndex = j;
-            }
-        }
-        let temp = valid_houses[i];
-        valid_houses[i] = valid_houses[minIndex];
-        valid_houses[minIndex] = temp;
+    if (cost_of_living[i] <= max_cost_of_living) {
+      valid_houses.push(i); // Use push() to add valid indices to the array
     }
+  }
+
+  for (let i = 0; i < valid_houses.length; i++) {
+    let minIndex = i;
+    for (let j = i + 1; j < valid_houses.length; j++) {
+      if (cost_of_living[valid_houses[minIndex]] > cost_of_living[valid_houses[j]]) {
+        minIndex = j;
+      }
+    }
+    let temp = valid_houses[i];
+    valid_houses[i] = valid_houses[minIndex];
+    valid_houses[minIndex] = temp;
+  }
 
     // Calculate the top 5 locations and store them in topLocations
     const topLocations = [];
